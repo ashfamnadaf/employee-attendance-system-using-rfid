@@ -34,17 +34,15 @@ The Employee Attendance System Using RFID is an embedded system project designed
 5. The attendance status is displayed on the LCD and monitored through UART.
 
 ## System Flow
-RFID Card
-    ↓
-UART RFID Module
-    ↓
-LPC2129 ARM7 Microcontroller
-    ↓
-RTC Module (I2C) → Date & Time
-    ↓
-Attendance Processing
-    ↓
-LCD Display / UART Monitoring
+
+| Step | Module | Function |
+|------|--------|----------|
+| 1 | RFID Card | Employee identification through unique RFID tag |
+| 2 | UART RFID Module | Reads RFID card data and sends it to controller |
+| 3 | LPC2129 ARM7 Microcontroller | Processes RFID data and controls system operation |
+| 4 | RTC Module (I2C) | Provides real-time date and time information |
+| 5 | LCD Display | Displays attendance status with date and time |
+| 6 | UART Communication | Monitors system data through serial terminal |
 
 ## Applications
 - Employee attendance systems
